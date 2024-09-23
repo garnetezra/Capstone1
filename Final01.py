@@ -1,5 +1,4 @@
 # Define initial nested dictionary
-# Define initial nested dictionary
 students_info = {
     1: {"Name": "Adit", "Rate": 30000, "Sessions": 4, "Grade": 4, "Attendance": 0},
     2: {"Name": "Akmal", "Rate": 75000, "Sessions": 12, "Grade": 5, "Attendance": 0},
@@ -149,11 +148,11 @@ def student_cancellation():
     else:
         print("Invalid index!")  # Handle invalid index input
 
-# update attandance
+# update attendance
 def reccord_attendance():
     print()
     display_student_table(students_info)
-    index = limited_input("Enter the student's index to Reccord Attendance: ", int)
+    index = limited_input("Enter the student's index to Record Attendance: ", int)
 
     if index in students_info:
         attempts = 0
